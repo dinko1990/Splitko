@@ -173,6 +173,32 @@
       "participants": [
         "p_0743cba0b49d6_19c9441fe42"
       ]
+    },
+    {
+      "id": "e_737e8c17bff328_19c947b8d4e",
+      "desc": "ALDI 21.2",
+      "amount": 50,
+      "payerId": "p_01acb2286bdd98_19c944233b0",
+      "date": "2026-02-21",
+      "participants": [
+        "p_0743cba0b49d6_19c9441fe42",
+        "p_19de5e4dbe2be_19c94421475",
+        "p_069585e7fa3c28_19c9442242d",
+        "p_01acb2286bdd98_19c944233b0"
+      ]
+    },
+    {
+      "id": "e_cd895d0759bb3_19c947c1e16",
+      "desc": "GAS",
+      "amount": 56,
+      "payerId": "p_01acb2286bdd98_19c944233b0",
+      "date": "2026-02-23",
+      "participants": [
+        "p_0743cba0b49d6_19c9441fe42",
+        "p_19de5e4dbe2be_19c94421475",
+        "p_069585e7fa3c28_19c9442242d",
+        "p_01acb2286bdd98_19c944233b0"
+      ]
     }
   ]
 }
