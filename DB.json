@@ -1,0 +1,178 @@
+{
+  "version": 1,
+  "event": {
+    "name": "Sesimbra",
+    "startDate": "2026-02-19",
+    "endDate": "2026-02-24"
+  },
+  "people": [
+    {
+      "id": "p_0743cba0b49d6_19c9441fe42",
+      "name": "Dean"
+    },
+    {
+      "id": "p_19de5e4dbe2be_19c94421475",
+      "name": "Maria"
+    },
+    {
+      "id": "p_069585e7fa3c28_19c9442242d",
+      "name": "Juli"
+    },
+    {
+      "id": "p_01acb2286bdd98_19c944233b0",
+      "name": "Markus"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "e_f70ca90c578e18_19c9444689c",
+      "desc": "ABB2",
+      "amount": 140,
+      "payerId": "p_0743cba0b49d6_19c9441fe42",
+      "date": "2026-02-20",
+      "participants": [
+        "p_0743cba0b49d6_19c9441fe42",
+        "p_19de5e4dbe2be_19c94421475",
+        "p_069585e7fa3c28_19c9442242d",
+        "p_01acb2286bdd98_19c944233b0"
+      ]
+    },
+    {
+      "id": "e_66b8b7ddeaa04_19c94458c07",
+      "desc": "ABB3",
+      "amount": 77.6,
+      "payerId": "p_0743cba0b49d6_19c9441fe42",
+      "date": "2026-02-22",
+      "participants": [
+        "p_0743cba0b49d6_19c9441fe42",
+        "p_01acb2286bdd98_19c944233b0"
+      ]
+    },
+    {
+      "id": "e_f271e6fb73c008_19c94464f2f",
+      "desc": "ABB1",
+      "amount": 70,
+      "payerId": "p_0743cba0b49d6_19c9441fe42",
+      "date": "2026-02-19",
+      "participants": [
+        "p_0743cba0b49d6_19c9441fe42",
+        "p_069585e7fa3c28_19c9442242d"
+      ]
+    },
+    {
+      "id": "e_e2e67d91e6118_19c9446c4c5",
+      "desc": "CAR1",
+      "amount": 15.8,
+      "payerId": "p_0743cba0b49d6_19c9441fe42",
+      "date": "2026-02-19",
+      "participants": [
+        "p_0743cba0b49d6_19c9441fe42",
+        "p_069585e7fa3c28_19c9442242d"
+      ]
+    },
+    {
+      "id": "e_2717119141161_19c94474eed",
+      "desc": "CAR2",
+      "amount": 31.6,
+      "payerId": "p_0743cba0b49d6_19c9441fe42",
+      "date": "2026-02-20",
+      "participants": [
+        "p_0743cba0b49d6_19c9441fe42",
+        "p_19de5e4dbe2be_19c94421475",
+        "p_069585e7fa3c28_19c9442242d",
+        "p_01acb2286bdd98_19c944233b0"
+      ]
+    },
+    {
+      "id": "e_69b8f698ee728_19c9447dc99",
+      "desc": "CAR3",
+      "amount": 31.6,
+      "payerId": "p_0743cba0b49d6_19c9441fe42",
+      "date": "2026-02-22",
+      "participants": [
+        "p_0743cba0b49d6_19c9441fe42",
+        "p_01acb2286bdd98_19c944233b0"
+      ]
+    },
+    {
+      "id": "e_ca5ac2f16e6f6_19c944adfd7",
+      "desc": "Groceries",
+      "amount": 42.84,
+      "payerId": "p_0743cba0b49d6_19c9441fe42",
+      "date": "2026-02-20",
+      "participants": [
+        "p_0743cba0b49d6_19c9441fe42",
+        "p_19de5e4dbe2be_19c94421475",
+        "p_069585e7fa3c28_19c9442242d",
+        "p_01acb2286bdd98_19c944233b0"
+      ]
+    },
+    {
+      "id": "e_60f451e5612aa8_19c944bed03",
+      "desc": "TOLLS",
+      "amount": 2.45,
+      "payerId": "p_0743cba0b49d6_19c9441fe42",
+      "date": "2026-02-20",
+      "participants": [
+        "p_19de5e4dbe2be_19c94421475",
+        "p_01acb2286bdd98_19c944233b0"
+      ]
+    },
+    {
+      "id": "e_d396c679f5d15_19c944d1e5b",
+      "desc": "TOLLS2",
+      "amount": 2.2,
+      "payerId": "p_0743cba0b49d6_19c9441fe42",
+      "date": "2026-02-20",
+      "participants": [
+        "p_19de5e4dbe2be_19c94421475",
+        "p_01acb2286bdd98_19c944233b0"
+      ]
+    },
+    {
+      "id": "e_783bfa16327988_19c944d91f6",
+      "desc": "Dean",
+      "amount": 3.4,
+      "payerId": "p_0743cba0b49d6_19c9441fe42",
+      "date": "2026-02-20",
+      "participants": [
+        "p_19de5e4dbe2be_19c94421475",
+        "p_01acb2286bdd98_19c944233b0"
+      ]
+    },
+    {
+      "id": "e_f8ff65f9bd38b_19c945bfc9c",
+      "desc": "Groceries",
+      "amount": 25.23,
+      "payerId": "p_069585e7fa3c28_19c9442242d",
+      "date": "2026-02-20",
+      "participants": [
+        "p_0743cba0b49d6_19c9441fe42",
+        "p_19de5e4dbe2be_19c94421475",
+        "p_069585e7fa3c28_19c9442242d",
+        "p_01acb2286bdd98_19c944233b0"
+      ]
+    },
+    {
+      "id": "e_b14eebe653e278_19c945e7616",
+      "desc": "BUS LIS->SET",
+      "amount": 14,
+      "payerId": "p_0743cba0b49d6_19c9441fe42",
+      "date": "2026-02-19",
+      "participants": [
+        "p_0743cba0b49d6_19c9441fe42",
+        "p_069585e7fa3c28_19c9442242d"
+      ]
+    },
+    {
+      "id": "e_fe036114166338_19c945f86b1",
+      "desc": "BUS POR->LIS",
+      "amount": 10.5,
+      "payerId": "p_069585e7fa3c28_19c9442242d",
+      "date": "2026-02-19",
+      "participants": [
+        "p_0743cba0b49d6_19c9441fe42"
+      ]
+    }
+  ]
+}

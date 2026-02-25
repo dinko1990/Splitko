@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Splitko</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- PDF export (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">S</div>
+      <div>
+        <div class="brandTitle">Splitko</div>
+        <div class="brandSub">orange • purple • white</div>
+      </div>
+    </div>
+
+    <div class="topActions">
+      <label class="fileBtn">
+        Upload JSON
+        <input id="jsonFileInput" type="file" accept="application/json,.json" />
+      </label>
+      <button id="loadDbBtn" class="btn secondary">DB</button>
+      <button id="exportJsonBtn" class="btn secondary">Export JSON</button>
+      <button id="exportPdfBtn" class="btn">Export PDF</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="cardHeader">
+        <h2>Event</h2>
+        <div class="totalPill">
+          <span>Total</span>
+          <b id="totalExpenses">€0.00</b>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="field">
+          <label>Event name</label>
+          <input id="eventName" type="text" placeholder="Trip to Lisbon" />
+        </div>
+        <div class="field">
+          <label>Start date</label>
+          <input id="startDate" type="date" />
+        </div>
+        <div class="field">
+          <label>End date</label>
+          <input id="endDate" type="date" />
+        </div>
+        <div class="hint">
+          Tip: export JSON anytime to save your progress.
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="cardHeader">
+        <h2>People</h2>
+        <form id="addPersonForm" class="row">
+          <input id="personNameInput" type="text" placeholder="Add person name…" autocomplete="off" />
+          <button class="btn" type="submit">Add</button>
+        </form>
+      </div>
+      <div id="peopleList" class="chips"></div>
+    </section>
+
+    <section class="card">
+      <div class="cardHeader">
+        <div>
+          <h2 id="expenseFormTitle">Add Expense</h2>
+          <div class="itemMeta" id="expenseFormSub">Create a new expense.</div>
+        </div>
+        <div class="editModeBadge" id="editModeBadge" hidden>
+          Editing
+        </div>
+      </div>
+
+      <form id="expenseForm" class="expenseForm">
+        <div class="grid2">
+          <div class="field">
+            <label>Description</label>
+            <input id="expenseDesc" type="text" placeholder="Dinner / Taxi / Hotel…" autocomplete="off" />
+          </div>
+
+          <div class="field">
+            <label>Amount (EUR)</label>
+            <input id="expenseAmount" type="number" inputmode="decimal" step="0.01" min="0" placeholder="0.00" />
+          </div>
+
+          <div class="field">
+            <label>Paid by</label>
+            <select id="expensePayer"></select>
+          </div>
+
+          <div class="field">
+            <label>Date</label>
+            <input id="expenseDate" type="date" />
+          </div>
+        </div>
+
+        <div class="participantsBlock">
+          <div class="participantsHeader">
+            <div class="labelStrong">Who was involved?</div>
+            <div class="row">
+              <button id="selectAllBtn" class="btn tiny secondary" type="button">All</button>
+              <button id="selectNoneBtn" class="btn tiny ghost" type="button">None</button>
+            </div>
+          </div>
+          <div id="participantsList" class="participants"></div>
+        </div>
+
+        <div class="row end">
+          <button id="cancelEditBtn" class="btn secondary" type="button" hidden>Cancel</button>
+          <button id="saveExpenseBtn" class="btn" type="submit">Add expense</button>
+        </div>
+      </form>
+
+      <div class="divider"></div>
+
+      <h3>Expenses</h3>
+      <div id="expensesList" class="list"></div>
+    </section>
+
+    <section class="card">
+      <h2>Summary</h2>
+      <div class="summaryGrid">
+        <div>
+          <h3>Balances</h3>
+          <div id="balancesList" class="list compact"></div>
+        </div>
+        <div>
+          <h3>Settle up</h3>
+          <div class="itemMeta">Suggested minimum payments.</div>
+          <div id="settlementsList" class="list compact"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      Splitko — a simple split-expenses page. No backend.
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
