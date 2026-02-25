@@ -525,6 +525,9 @@ input:focus, select:focus{
   border-radius: 12px;
   font-size: 12px;
 }
+.btn.green {
+  background: linear-gradient(135deg, #6d28d9, #22c55e);
+}
 
 .fileBtn{
   position: relative;
@@ -671,3 +674,4 @@ input:focus, select:focus{
   .summaryGrid{ grid-template-columns: 1fr; }
   .topbar{ align-items: flex-start; }
 }
+
